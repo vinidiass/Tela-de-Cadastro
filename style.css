@@ -1,0 +1,90 @@
+@import url("https://fonts.googleapis.com/css2?family=Indie+Flower&family=Noto+Sans:wght@400;700&family=Oswald:wght@200;300&family=Permanent+Marker&family=Poppins:wght@100&family=Righteous&family=Roboto&family=Roboto+Mono:wght@200&display=swap");
+
+* {
+  font-family: "Roboto", sans-serif;
+}
+
+body {
+  background-image: linear-gradient(
+    to right,
+    rgb(72 ,61 ,139),
+    rgb(17, 54, 71)
+  );
+}
+
+.box {
+  color: white;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: rgba(0, 0, 0, 0.6);
+  padding: 15px;
+  border-radius: 15px;
+  width: 20%;
+}
+
+fieldset {
+  border: 3px solid 	#836FFF;
+}
+
+legend {
+  border: 1px solid 	#836FFF;
+  padding: 10px;
+  text-align: center;
+  background-color: #836FFF;
+  border-radius: 8px;
+}
+
+.inputbox {
+  position: relative;
+}
+
+.inputuser {
+  background: none;
+  border: none;
+  border-bottom: 1px solid white;
+  outline: none;
+  color: white;
+  font-size: 15px;
+  width: 100%;
+  letter-spacing: 2px;
+}
+
+.labelinput {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  pointer-events: none;
+  transition: 0.5s;
+}
+
+.inputuser:focus ~ .labelinput,
+.inputuser:valid ~ .labelinput {
+  top: -20px;
+  font-size: 12px;
+  color: 	#836FFF;
+}
+
+#datanascimento {
+  border: none;
+  padding: 8px;
+  border-radius: 10px;
+  outline: none;
+  font-size: 15px;
+}
+
+#submit{
+  background-image: linear-gradient(to right,rgb(0, 92, 197), rgb(90, 20, 220));
+  width: 100%;
+  border: none;
+  padding: 15px;
+  color: white;
+  font-size: 15px;
+  cursor: pointer;
+  border-radius: 10px;
+}
+
+   #submit:hover{
+            background-image: linear-gradient(to right,rgb(0, 80, 172), rgb(80, 19, 195));
+        }
